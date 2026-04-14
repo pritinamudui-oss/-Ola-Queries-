@@ -1,7 +1,5 @@
-create database Ola_Ride;
-use Ola_Ride;
-drop Ola_Ride;
-create database Ola_Ride;`ola_dataset - july`
+
+create `ola_dataset - july`;
 use 'ola_dataset - july';
 select Payment_Method, count
 use `Ola_dataset - july`;
