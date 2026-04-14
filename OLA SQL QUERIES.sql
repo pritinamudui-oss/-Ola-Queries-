@@ -1,5 +1,5 @@
 
-create `ola_dataset - july`;
+create database`ola_dataset - july`;
 use 'ola_dataset - july';
 select Payment_Method, count
 use `Ola_dataset - july`;
