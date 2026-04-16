@@ -1,5 +1,8 @@
-
-create database`ola_dataset - july`;
+create database Ola_Ride;
+use Ola_Ride;
+drop Ola_Ride;
+create database Ola_Ride;`ola_dataset - july`
+select * from `Ola_dataset - july`;
 use 'ola_dataset - july';
 select Payment_Method, count
 use `Ola_dataset - july`;
@@ -28,10 +31,17 @@ select Payment_Method, count(*) as Total_Rides from `Ola_dataset - july` where P
 select * from `Ola_dataset - july`;
 Find the average customer rating per vehicle type
 select Vehicle_Type, avg(Customer_Rating) as Avg_Rating from `Ola_dataset - july` group by Vehicle_Type;
+use O
+select * from `Ola_dataset - july`;
+-- calculate the total booking value of rides completed sucessfully
 
-calculate the total booking value of rides completed sucessfully
-select sum(Booking_Value)as Total_Booking _Value from `OLa_dataset - july` where Booking_Status = 'Success';  (DO THIS AGAIN ITS WRONG)
+
+select sum(Booking_Value) as Total_Booking_Value from `Ola_dataset - july` where Booking_Status = 'Success';
+
+-- List all incomplete rides along with the reason
+
+select Booking_ID, Customer_ID, Booking_Status, Incomplete_Rides_Reason from `Ola_dataset - july` where Booking_Status = 'Success';
 
 
-List all incomplete ride along with the reason
-select incomplete_Rides_Reason, count(Incomplete_Rides) as Total_Incomplete_Ride from `Ola_dataset -july` where Booking_Status = 'Canceled by Customer' or Booking_Status = 'Canceled by Driver' Group by Incomplete_Ride_Reason;
+
+
